@@ -1,0 +1,21 @@
+.staffPicksProNav {
+	background-color: theme('colors.nav-gray');
+
+	.logoFrame {
+		gap: 10px;
+
+		.appName {
+			font-size: 12px;
+			text-align: right;
+			color: theme('colors.brand-white');
+		}
+
+		.edelweissTextImage {
+			height: 26px;
+		}
+
+		.edelweissLogoImage {
+			height: 30px;
+		}
+	}
+}
