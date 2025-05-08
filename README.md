@@ -7,7 +7,7 @@ Create professional book marketing materials in minutes. "Staff Picks Pro" trans
 - Node.js 20.0.0 or higher
 - npm 10.0.0 or higher
 
-Consider installing (volta)[https://volta.sh/] before running this project to guarantee NodeJS version compatibility. This project leverages `volta` to "pin" dev environments to a specific version of NodeJS. You can find the `volta` config in the root `package.json`. All you need to do is install `volta` and this proejct will be automatically run with the following node version.
+Consider installing (volta)[https://volta.sh/] before running this project to guarantee NodeJS version compatibility. This project leverages `volta` to "pin" dev environments to a specific version of NodeJS. You can find the `volta` config in the root `package.json`. All you need to do is install `volta` and this project will be automatically run with the following node version.
 
 ```
 "volta": {
