@@ -1,34 +1,24 @@
-# StaffPicksPro: Marketing Platform for Booksellers
+# "Edelweiss - Staff Picks Pro": Marketing Platform for Booksellers
 
-Create professional book marketing materials in minutes. StaffPicksPro transforms Edelweiss reviews and comprehensive book data into ready-to-print promotional PDFs for your bookstore. It's perfect for highlighting your store's "staff picks."
+Create professional book marketing materials in minutes. "Staff Picks Pro" transforms Edelweiss reviews and comprehensive book data into ready-to-print promotional PDFs for your bookstore. It's perfect for highlighting your store's "staff picks."
 
 ## Prerequisites
 
 - Node.js 20.0.0 or higher
 - npm 10.0.0 or higher
 
-Consider installing (volta)[https://volta.sh/] before running this project to guarantee Node.js version compatibility.
+Consider installing (volta)[https://volta.sh/] before running this project to guarantee NodeJS version compatibility. This project leverages `volta` to "pin" dev environments to a specific version of NodeJS. You can find the `volta` config in the root `package.json`. All you need to do is install `volta` and this proejct will be automatically run with the following node version.
 
-## Environment Setup
-
-Create a `.env` file in the root directory with the following variables:
-
-```env
-VITE_API_URL="https://qa-api.edelweiss.plus"
-VITE_USE_TEST_DATA="true"
-OPENAI_API_KEY="your_openai_api_key"
-ALLOW_AI_PROMPT="false"
-PORT=8080
 ```
-
-- Set `VITE_USE_TEST_DATA="false"` to use real API data
-- Set `ALLOW_AI_PROMPT="true"` to enable AI-generated marketing text
-- Replace `your_openai_api_key` with your actual OpenAI API key
+"volta": {
+    "node": "20.15.1"
+}
+```
 
 ## Installation
 
 ```bash
-npm install
+npm i
 ```
 
 ## Development
@@ -45,6 +35,8 @@ This will:
 - Start the Express server on port 8080
 - Enable hot module reloading
 - Proxy API requests to the Express server
+
+The project should be accessible at `http://localhost:3000`
 
 ## Feature Testing
 
@@ -68,20 +60,12 @@ Check out [Edelweiss catalogs](https://www.edelweiss.plus/#dashList=2&page=1) fo
 npm run build
 ```
 
-The build output will be in the `dist` directory.
-
-## Testing
-
-Run the test suite:
-
-```bash
-npm test
-```
+The build output will be in the `build` directory.
 
 ## Project Structure
 
 ```
-├── server/               # Express server files
+├── server/              # Express server files
 │   ├── index.ts         # Server entry point
 │   └── routes/          # API route handlers
 ├── src/
@@ -119,7 +103,3 @@ Supports all modern browsers:
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
-
-## License
-
-MIT
