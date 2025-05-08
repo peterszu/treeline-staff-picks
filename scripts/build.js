@@ -1,6 +1,5 @@
 import { execSync } from 'node:child_process';
 import process from 'node:process';
-import { copyFileSync } from 'node:fs';
 
 const validEnvironments = ['qa', 'development', 'production'];
 const env = process.argv[2];
@@ -24,10 +23,6 @@ try {
 
 	// Then run server build
 	execSync('npm run build:server', { stdio: 'inherit' });
-
-	// Then copy the web.config and startup files to the build directory
-	copyFileSync('web.config', 'build/web.config');
-	copyFileSync('startup.txt', 'build/startup.txt');
 } catch (error) {
 	process.exit(error.status || 1);
 }
